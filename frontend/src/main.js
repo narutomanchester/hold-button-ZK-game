@@ -12,6 +12,6 @@ holdButton.addEventListener('mousedown', () => {
 
 holdButton.addEventListener('mouseup', () => {
     clearInterval(intervalId);
-    seconds = 0;
+    // seconds = 0;
     counter.textContent = seconds;
 });
