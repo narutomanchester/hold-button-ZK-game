@@ -39,8 +39,8 @@ const StarTappingGame = () => {
         }
 
         // Generate snowflakes
-        for (let i = 0; i < 5; i++) {
-          if (Math.random() < 0.6) {
+        for (let i = 0; i < 1; i++) {
+          if (Math.random() < 0.3) {
             generateSnowflake();
           }
         }
@@ -186,7 +186,7 @@ const StarTappingGame = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 flex flex-col items-center justify-center p-4 overflow-hidden">
-      <h1 className="text-4xl font-bold mb-8 text-white shadow-lg px-6 py-2 rounded-full bg-opacity-30 bg-purple-800">ZK Star Tapping Game</h1>
+      <h1 className="text-4xl font-bold mb-8 text-white shadow-lg px-6 py-2 rounded-full bg-opacity-30 bg-purple-800">Star & Snow Tapping Game</h1>
       
       <div className="mb-6 flex justify-between items-center bg-white bg-opacity-90 rounded-lg shadow-lg p-4 w-full max-w-2xl">
         {walletAddress ? (
@@ -222,7 +222,7 @@ const StarTappingGame = () => {
         )}
       </div>
       
-      <div className="bg-white bg-opacity-90 rounded-lg shadow-2xl p-8 max-w-2xl w-full text-center relative overflow-hidden">
+      <div className="bg-white bg-opacity-90 rounded-lg shadow-2xl p-8 max-w-2xl w-full text-center relative overflow-hidden h-[calc(50vh)]">
         {gameState === 'ready' && (
           <p className="text-lg text-gray-700 mb-6 font-medium">
             Tap falling stars and snowflakes! Stars give points, snowflakes freeze time!
@@ -275,7 +275,7 @@ const StarTappingGame = () => {
         </div>
 
         {gameState === 'playing' && (
-          <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ height: '800px' }}>
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
             {stars.map((star) => (
               <div
                 key={star.id}
