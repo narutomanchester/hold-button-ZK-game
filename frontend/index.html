@@ -1,4 +1,4 @@
-<html></html>
+<!-- <html></html>
 <head>
   <title>Star Tapping Game</title>
   <link rel="stylesheet" href="StarTappingGame.css">
@@ -7,25 +7,36 @@
   <div id="root"></div>
   <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
-  <script   
- src="src/starTappingGame.jsx"></script>
-</body>
-</html>
-
-
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Button Hold Counter with WalletConnect</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <button id="walletConnectButton">Connect Wallet</button>
-  <div id="counter">0</div>
-  <button id="holdButton">Hold Me</button>
-  <script src="script.js"></script>
+  <script  src="src/starTappingGame.js"></script>
 </body>
 </html> -->
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+<body>
+  <!-- <button id="walletConnectButton">Connect Wallet</button>
+  <div id="counter">0</div>
+  <button id="holdButton">Hold Me</button> -->
+  <div id="root"></div>
+  
+
+  <script type="module">
+    import RefreshRuntime from 'http://localhost:5173/@react-refresh'
+    RefreshRuntime.injectIntoGlobalHook(window)
+    window.$RefreshReg$ = () => {}
+    window.$RefreshSig$ = () => (type) => type
+    window.__vite_plugin_react_preamble_installed__ = true
+  </script>
+  <script type="module" src="/src/starTappingGame.tsx"></script>
+</body>
+</html>
 
 <!-- <html></html>
   <head>
