@@ -186,7 +186,7 @@ const StarTappingGame = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 flex flex-col items-center justify-center p-4 overflow-hidden">
-      <h1 className="text-4xl font-bold mb-8 text-white shadow-lg px-6 py-2 rounded-full bg-opacity-30 bg-purple-800">Star & Snow Tapping Game</h1>
+      <h1 className="text-4xl font-bold mb-8 text-white shadow-lg px-6 py-2 rounded-full bg-opacity-30 bg-purple-800">ZK Star Tapping Game</h1>
       
       <div className="mb-6 flex justify-between items-center bg-white bg-opacity-90 rounded-lg shadow-lg p-4 w-full max-w-2xl">
         {walletAddress ? (
